@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:id="@+id/New_Layout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<!-- 定义一个ImageView组件 -->
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:orientation="vertical"
+	    >
+		<RelativeLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    >
+			<ImageButton 
+			    android:id="@+id/new_return"
+	   	 		android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/turnleft"
+				android:background="#00000000"
+				/>"
+			<ImageButton
+			    android:id="@+id/new_save"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentRight="true"
+			    android:src="@drawable/save"
+			    android:background="#00000000"
+			    />
+		</RelativeLayout>
+	
+		<LinearLayout 
+	   	 	android:layout_marginTop="20dp"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	>
+			<TextView
+	    		android:gravity="center"
+	    		android:layout_width="50dp"
+	    		android:layout_height="35dp"
+	    		android:text="标题"
+	    		android:textColor="#FFFFFF"
+	    		android:background="@drawable/black"
+	     		/>
+
+			<EditText
+			    android:id="@+id/title_edittext"
+			    android:layout_width="152dp"
+			    android:layout_height="35dp"
+			    android:background="@drawable/pink"
+			    android:cursorVisible="false"
+			    android:hint="输入标题"
+			    android:scrollbars="vertical"
+			    android:textColor="#000000"
+			    android:textCursorDrawable="@null"
+			    android:textSize="18dp" />
+
+		</LinearLayout>
+	
+		
+		<LinearLayout 
+	   	 	android:layout_marginTop="15dp"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	>
+			<TextView
+	    		android:gravity="center"
+	    		android:layout_width="50dp"
+	    		android:layout_height="35dp"
+	    		android:text="日期"
+	    		android:textColor="#FFFFFF"
+	    		android:background="@drawable/black"
+	     		/>
+			<TextView
+			    android:id="@+id/dateDisplay" 
+			    android:layout_width="107dp"
+			    android:layout_height="35dp"
+			    android:background="@drawable/pink"
+			    android:gravity="center"
+			    android:textSize="18dp"
+			    android:textColor="#000000" />
+		</LinearLayout>
+	
+		<LinearLayout 
+	   	 	android:layout_marginTop="15dp"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	>
+			<TextView
+	    		android:gravity="center"
+	    		android:layout_width="50dp"
+	    		android:layout_height="35dp"
+	    		android:text="重复"
+	    		android:textColor="#FFFFFF"
+	    		android:background="@drawable/black"
+	     		/>
+			
+			<Spinner
+			    android:id="@+id/recycle_spinner"
+			    android:layout_width="145dp"
+			    android:layout_height="35dp"
+			    android:background="@drawable/pink"
+			    android:gravity="center"
+			    android:textSize="18dp"
+			    android:textColor="#000000" />
+
+		</LinearLayout>
+	
+		<LinearLayout 
+	   	 	android:layout_marginTop="15dp"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:orientation="horizontal"
+	    	>
+			<TextView
+	    		android:gravity="center"
+	    		android:layout_width="50dp"
+	    		android:layout_height="35dp"
+	    		android:text="颜色"
+	    		android:textColor="#FFFFFF"
+	    		android:background="@drawable/black"
+	     		/>
+			<TextView
+			    android:id="@+id/color_textview"
+	    		android:layout_width="71dp"
+	    		android:layout_height="35dp"
+	    		android:gravity="center"
+	    		android:background="@drawable/pink"
+	    		 />
+		</LinearLayout>
+	
+	</LinearLayout>
+	
+	<ImageView
+	    android:id="@+id/imageView"
+	    android:layout_width="match_parent"
+	    android:layout_height="403dp"
+	    android:scaleType="fitCenter" />
+
+	<!-- 定义一个Gallery组件 -->
+
+	<Gallery
+	    android:id="@+id/gallery"
+	    android:layout_width="fill_parent"
+	    android:layout_height="115dp"
+	    android:layout_gravity="bottom"
+	    android:layout_marginTop="2dp"
+	    android:spacing="2pt"
+	    android:unselectedAlpha="0.6" />
+	
+</FrameLayout>
